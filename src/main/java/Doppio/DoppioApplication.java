@@ -10,7 +10,7 @@ public class DoppioApplication {
     public static void main(String[] args) {
         System.out.println("Iniciando o Doppio Framework...");
 
-// Exemplo de uso de Object Pooling
+// Exemplo de uso de Object Pooling 
         ObjectPool<String> stringPool = new ObjectPool<>(() -> new String("Objeto Reutilizado"), 10);
         String obj = stringPool.borrowObject();
         System.out.println("Objeto emprestado do pool: " + obj);
